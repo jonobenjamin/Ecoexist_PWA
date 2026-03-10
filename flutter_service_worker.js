@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "513e3c64c9b0691649336270db7c7b87",
+const RESOURCES = {"flutter_bootstrap.js": "6b07f5d1879e34dfe35e8690e7019fc3",
 "version.json": "b359803206879e1d7961102c7506ac90",
-"index.html": "cbb956f6720a915b5fedf77b41245137",
-"/": "cbb956f6720a915b5fedf77b41245137",
-"main.dart.js": "5b5909bf589c14b8318d06150f882990",
+"index.html": "2b82e0278d1b2a4cfadab413c8156795",
+"/": "2b82e0278d1b2a4cfadab413c8156795",
+"main.dart.js": "e6808bb862de16a3cdb7357ebdae47a1",
 "flutter.js": "24bc71911b75b5f8135c949e27a2984e",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "0658615ef1bdea8a662d5bb1c68d97b6",
@@ -24,7 +24,7 @@ const RESOURCES = {"flutter_bootstrap.js": "513e3c64c9b0691649336270db7c7b87",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/shaders/stretch_effect.frag": "40d68efbbf360632f614c731219e95f0",
 "assets/AssetManifest.bin": "fed58b285154c96f3caf10a67c7cd72e",
-"assets/fonts/MaterialIcons-Regular.otf": "662463b7e278ac1b2d533c5cc034862d",
+"assets/fonts/MaterialIcons-Regular.otf": "740be513a6d379fba794b049c2a3924b",
 "assets/assets/Consession_boundary.geojson": "7f04e0566b20c6e8e96feca2a9a4031e",
 "assets/assets/images/KPR_logo.png": "f70391debeb086a102e3f8fe1a447937",
 "assets/assets/images/KPR_PWA_Background_image.png": "72e974e963f2e43a63b6b259b330fbae",
@@ -90,7 +90,7 @@ self.addEventListener("activate", function(event) {
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
         var key = request.url.substring(origin.length + 1);
-        if (key.startsWith('KPR_PWA_TEST/')) key = key.substring(13);
+        if (key.startsWith('Ecoexist_PWA/')) key = key.substring(13);
       if (key == "") {
           key = "/";
         }
@@ -149,7 +149,7 @@ self.addEventListener("fetch", (event) => {
 
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
-  const BASE_PATH = 'KPR_PWA_TEST';
+  const BASE_PATH = 'Ecoexist_PWA';
   // Normalize key for base path deployment (Flutter RESOURCES use paths without base)
   if (key.startsWith(BASE_PATH + '/')) {
     key = key.substring(BASE_PATH.length + 1);
@@ -202,7 +202,7 @@ self.addEventListener('message', (event) => {
 async function downloadOffline() {
   var resources = [];
   var origin = self.location.origin;
-  var basePath = 'KPR_PWA_TEST';
+  var basePath = 'Ecoexist_PWA';
   var contentCache = await caches.open(CACHE_NAME);
   var currentContent = {};
   for (var request of await contentCache.keys()) {
