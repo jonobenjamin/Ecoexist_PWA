@@ -94555,9 +94555,9 @@ r=s.ax
 r.M$=q
 r.J$=0
 s.aK()},
-P(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=t.E,g=A.ne(A.b([A.aLe("assets/images/KPR_logo.png",i,40,40),B.Ub,A.dK(j.a.c,i,i,i,i,i,i)],h),B.ag,B.ah,B.bz,0)
+P(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=t.E,g=A.ne(A.b([A.aLe("assets/images/Ecoexist_logo.png",i,40,40),B.Ub,A.dK(j.a.c,i,i,i,i,i,i)],h),B.ag,B.ah,B.bz,0)
 g=A.aFp(A.b([A.iV(j.a.d,new A.ay5(j),i),new A.lI(A.aK1(j.dy,t.z),new A.ay6(),i,i,t.lo)],h),g)
-s=A.aGR(0,A.aLe("assets/images/KPR_PWA_Background_image.png",B.CU,i,i))
+s=A.aGR(0,A.aLe("assets/images/Ecoexist_PWA_Background_image.png",B.CU,i,i))
 r=$.aSY()
 q=j.r
 p=A.w9(q?B.hO:B.JP,i,i,i)
@@ -94848,7 +94848,7 @@ q=!0
 s=1
 break}l=A.b([],t.t)
 k="https://ecoexist-pwa-backend.vercel.app"
-j="1bfafeaa14a4f1af545d3c9ea6dbf07b983bf5d8cf25ec283338c12427bc384b"
+j="your_ecoexist_api_key_here"
 a2=m,a3=a2.length,a5=t.N,a6=t.z,a7=0
 case 7:if(!(a7<a2.length)){s=9
 break}i=a2[a7]
@@ -95030,7 +95030,7 @@ return A.O(g.KP("assets/Consession_boundary.geojson"),$async$oE)
 case 6:n=b
 m=B.bV.B9(0,n,null)
 s=7
-return A.O(g.KP("assets/KPR_roads.geojson"),$async$oE)
+return A.O(g.KP("assets/Ecoexist_roads.geojson"),$async$oE)
 case 7:l=b
 k=B.bV.B9(0,l,null)
 f=A.aL4()
@@ -95226,7 +95226,7 @@ $1(a){return A.aMo(B.k,a.a,2)},
 $S:595}
 A.axd.prototype={
 $1(a){var s=null
-return new A.hH(a,new A.Uw(24,24,B.CT,new A.G0("assets/KPR.svg",s,s,s,s),s,s),24,24,B.js)},
+return new A.hH(a,new A.Uw(24,24,B.CT,new A.G0("assets/Ecoexist.svg",s,s,s,s),s,s),24,24,B.js)},
 $S:596}
 A.S8.prototype={
 f3(a){var s=0,r=A.S(t.H),q,p=2,o=[],n=this,m,l,k,j
