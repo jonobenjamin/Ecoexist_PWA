@@ -111,7 +111,7 @@ class AuthController {
     container.innerHTML = `
       <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 9999; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
         <div style="background: white; border-radius: 16px; padding: 24px; max-width: 400px; width: 90%; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); text-align: center;">
-          <h2 style="margin: 0 0 20px 0; color: #333; font-size: 24px;">KPR Monitoring App</h2>
+          <h2 style="margin: 0 0 20px 0; color: #333; font-size: 24px;">Ecoexist</h2>
           <div style="font-size: 48px; margin-bottom: 20px;">📱</div>
           <p style="color: #666; margin-bottom: 20px; font-size: 16px;">
             You're currently offline. This app requires an internet connection for initial setup and authentication.
